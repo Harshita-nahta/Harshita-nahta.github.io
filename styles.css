@@ -27,14 +27,21 @@ padding: 0;
 
 
  .welcomeMessageBorder{
- border: solid yellow 1px;
+ border: solid white 3px;
  border-radius:50%;
- background-color: #eaeff2;
- color:#34495e;
- padding: 187px 36px 90px 36px;
+ padding: 90px 90px 90px 90px;
  text-align: center;
- width: 300px;
+ width: 100px;
+ cursor: pointer;
  margin-top:0;
+transition-duration: 1s;
+ }
+
+ .welcomeMessageBorder:hover {
+ border: solid white 1px;
+ font-size : 45px !important;
+ padding: 73px 42px 73px 42px;
+ width: 200px;
  }
 
 
@@ -160,8 +167,8 @@ padding: 0;
     }
 
     #aboutNav {
-      --nav-option-tx: -36px !important;
-      --nav-option-ty: -292px !important;
+      --nav-option-tx: -40px !important;
+      --nav-option-ty: -296px !important;
     }
 
     #contactNav {
@@ -173,9 +180,11 @@ padding: 0;
       --nav-option-ty: 29px !important;
     }
     #skillNav {
-      --nav-option-tx: -36px !important ;
-      --nav-option-ty: 141px !important;
+      --nav-option-tx: -40px !important ;
+      --nav-option-ty: 145px !important;
     }
+
+
 
 
     .nav_icon_boundary_view{
@@ -188,7 +197,7 @@ padding: 0;
      .nav_icon_boundary_view:hover {
        -webkit-animation-play-state: paused;
        background: url("assets/icon_outline.svg") no-repeat;
-       transform : scale(2.0) !important;
+       transform : scale(1.6) !important;
       }
 
         @keyframes rotation {
