@@ -11,7 +11,34 @@ padding: 0;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
-.moveLeft{
+.left{
+  position: fixed;
+  top: 50% ;
+  left: 25% ;
+   transform: translate(-50%, -50%);
+ }
+
+ .right{
+  position: fixed;
+  top: 50%;
+  left:95%;
+  transform: translateY(-50%);
+  }
+
+
+ .welcomeMessageBorder{
+ border: solid yellow 1px;
+ border-radius:50%;
+ background-color: #eaeff2;
+ color:#34495e;
+ padding: 187px 36px 90px 36px;
+ text-align: center;
+ width: 300px;
+ margin-top:0;
+ }
+
+
+/*.moveLeft{
     animation-name: moveInLeft;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
@@ -32,6 +59,7 @@ padding: 0;
 80%{ transform:translateX(10px); }
 100%{ opacity:1; transform:translate(0); }
 }
+*/
 
 .div2 {
   border-right: solid 3px rgba(0,255,0,.75);
@@ -45,24 +73,23 @@ padding: 0;
              animated-cursor 600ms steps(29,end) infinite;
 }
 
-/* text animation */
-
 @keyframes animated-text{
   from{width: 0;}
   to{width: 320px;}
 }
 
-/* cursor animations */
-
 @keyframes animated-cursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
-img {
+
+.computer_img {
   height: 1200px;
   width: 1200px;
   margin-left:2%;
 }
+
+
 .page_wrap{
        position: relative;
        display: inline-block; /* Make the width of box same as image */
@@ -87,3 +114,88 @@ img {
       width:100%;
       margin:0 auto;
     }
+
+
+    #nav .option {
+      font-size: 20px;
+      position: fixed;
+      height: 250px;
+      width: 250px;
+      left: 50%;
+      top: 50%;
+      border-radius: 50%;
+      text-align: center;
+      transition: 100ms;
+      border-radius: 75px;
+      --nav-option-scaler: 1;
+      --nav-option-tx: 0;
+      --nav-option-ty: 0;
+      transform: translate(var(--nav-option-tx), var(--nav-option-ty))
+        scale(var(--nav-option-scaler));
+      cursor: pointer;
+    }
+
+    .nav_option p{
+      opacity: 0;
+    }
+
+
+    #nav .option .nav_icon_boundary {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .nav_link{
+     position: relative;
+     top: 14%;
+   }
+
+    .option{
+      border-radius: 50%;
+      z-index:-1;
+    }
+
+    #aboutNav {
+      --nav-option-tx: -36px !important;
+      --nav-option-ty: -292px !important;
+    }
+
+    #contactNav {
+      --nav-option-tx: 115px !important;
+      --nav-option-ty: -172px !important;
+    }
+    #resumeNav {
+      --nav-option-tx: 115px !important ;
+      --nav-option-ty: 29px !important;
+    }
+    #skillNav {
+      --nav-option-tx: -36px !important ;
+      --nav-option-ty: 141px !important;
+    }
+
+
+    .nav_icon_boundary_view{
+        border-radius: 50%;
+        background: url("assets/icon_dash_outiline.svg") no-repeat;
+        transform-origin: 50% 29%;
+        animation: rotation 30s infinite linear;
+
+     }
+     .nav_icon_boundary_view:hover {
+       -webkit-animation-play-state: paused;
+       background: url("assets/icon_outline.svg") no-repeat;
+       transform : scale(2.0) !important;
+      }
+
+        @keyframes rotation {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(359deg);
+          }
+        }

@@ -1,6 +1,6 @@
 $(document).ready(()=>{
   $('.div1')
-  		.css('font-size', '40px')
+  		.css('font-size', '100px')
       .css('text-align', 'center')
       .text('Hii!')
       .addClass('centered')
@@ -28,8 +28,19 @@ $(document).ready(()=>{
                                 .fadeOut(1500)
                                 .fadeOut(3500,()=>{
                                         $('.computer_img')
-                                          .fadeOut(1500)
-                                                  })
+                                          .fadeOut(1500,()=>{
+                                        $('.nav_option')
+                                          .addClass('option')
+                                          .removeClass('nav_option')
+                                        $('.nav_icon_boundary')
+                                            .addClass('nav_icon_boundary_view')
+                                            .fadeIn(1500)
+                                        $('.welcomeMessage')
+                                          .css('font-size', '30px')
+                                          .text("Harshita's portfolio")
+                                          .addClass('welcomeMessageBorder')
+                                            })
+                                          });
                                         });
                     });
 });
