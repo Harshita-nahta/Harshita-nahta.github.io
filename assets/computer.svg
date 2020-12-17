@@ -8,7 +8,7 @@
 }
 
 .computer{
-  stroke-width:4px;
+  stroke-width:8px;
   stroke-dashoffset:0;
   stroke-dasharray:3200;
   animation-name: computeranim;
@@ -21,7 +21,7 @@
 
 @keyframes computeranim {
   0%{
-   stroke-dashoffset: -3200;
+   stroke-dashoffset: -3000;
   }
   50%{
     stroke: black;
@@ -30,4 +30,4 @@
    stroke-dashoffset: 0;
     stroke: yellow;
   }
-}</style><path class="computer" fill="none" stroke="#eaeff2"    d="M469.85 122h906.81v532.58H469.85zM224 889.96l245.85-235.38M1376.65 654.58l244.5 235.38M224 889.96h1397.15M224.5 917.5l1397.33-6.5M224 889.96v27.62M1621.15 889.96V911"/><path class="computer" fill="none" stroke="#eaeff2"  d="M491.34 141.73h862.47v490.5H491.34z"/></svg>
+}</style><path class="computer" fill="none" stroke="#eaeff2"   d="M469.85 122h906.81v532.58H469.85zM224 889.96l245.85-235.38M1376.65 654.58l244.5 235.38M224 889.96h1397.15M224.5 917.5l1397.33-6.5M224 889.96v27.62M1621.15 889.96V911"/><path class="computer" fill="none" stroke="#eaeff2" d="M491.34 141.73h862.47v490.5H491.34z"/></svg>

@@ -1,4 +1,6 @@
 $(document).ready(()=>{
+  $('.leftBox').delay(21000).fadeIn(1000);
+  
   $('.div1')
   		.css('font-size', '100px')
       .css('text-align', 'center')
@@ -45,5 +47,5 @@ $(document).ready(()=>{
                                         });
                     });
 
-              $('.rigthBox').delay(8000).fadeIn(400);
+
 });

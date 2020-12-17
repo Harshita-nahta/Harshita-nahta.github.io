@@ -2,6 +2,10 @@
 <html>
 <head>
 <link rel="stylesheet" href="styles.css">
+
+<link  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+<link src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></link>
+<link src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></link>
 </head>
 <body>
 <div class="welcome_page">
@@ -15,40 +19,44 @@
       </div>
   </div>
 
-<div class="left">
+<div class="left col-12 col-md-6">
   <div id="nav_welcome_box">
     <p class="welcomeMessage left"></p>
     <div id="nav">
+
         <div class="nav_option left" id="aboutNav">
-          <div class="nav_icon_boundary ">
+          <a href="#content" ><div class="nav_icon_boundary ">
           </div>
-          <p class="nav_link">About</p>
+          <p class="nav_link">About</p></a>
         </div>
 
         <div class="nav_option left" id="contactNav">
-          <div class="nav_icon_boundary ">
+        <a href="#content" >  <div class="nav_icon_boundary ">
           </div>
               <p class="nav_link">Contact</p>
+        </a>
         </div>
 
         <div class="nav_option left" id="resumeNav">
-          <div class="nav_icon_boundary ">
+          <a href="#content" ><div class="nav_icon_boundary ">
           </div>
             <p class="nav_link">Resume</p>
+          </a>
         </div>
 
         <div class="nav_option left" id="skillNav">
-          <div class="nav_icon_boundary ">
+          <a href="#content" ><div class="nav_icon_boundary ">
           </div>
           <p class="nav_link">Skill</p>
+        </a>
         </div>
 </div>
 </div>
 </div>
 
-<div class="rightBox">
-  <div class="content">
-    
+<div class="rightBox col-12 col-md-6">
+  <div id="content" >
+
   </div>
 </div>
 
@@ -56,6 +64,7 @@
 <div id=""></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="logic.js"></script>
+
 </body>
 
 </html>

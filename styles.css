@@ -184,6 +184,10 @@ transition-duration: 1s;
       --nav-option-ty: 145px !important;
     }
 
+a{
+  text-decoration : none;
+  color : white;
+}
 
 
 
@@ -200,6 +204,11 @@ transition-duration: 1s;
        transform : scale(1.6) !important;
       }
 
+      .nav_link:hover {
+        -webkit-animation-play-state: paused;
+        background: url("assets/icon_outline.svg") no-repeat;
+        background-transform : scale(1.6) !important;
+       }
         @keyframes rotation {
           from {
             transform: rotate(0deg);
